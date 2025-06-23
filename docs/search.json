@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "presentation_slides.html#cest-quoi-une-édition-critique-dun-texte-classique",
+    "href": "presentation_slides.html#cest-quoi-une-édition-critique-dun-texte-classique",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "C’est quoi, une édition critique d’un texte classique ?",
+    "text": "C’est quoi, une édition critique d’un texte classique ?\n\nEcdotique : Art d’éditer les textes d’après une méthode critique ;\nἔκδοσις &lt; ἐκδίδωμι : produire au dehors, faire passer en d’autres mains, confier ; publier ;\nPlusieurs étapes:\n\nRecensio ;\nCollatio ;\nEmendatio ;\nDispositio."
+  },
+  {
+    "objectID": "presentation_slides.html#section",
+    "href": "presentation_slides.html#section",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "",
+    "text": "Sylloge Parisina (S16)"
+  },
+  {
+    "objectID": "presentation_slides.html#le-cas-des-épigrammatistes",
+    "href": "presentation_slides.html#le-cas-des-épigrammatistes",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Le cas des épigrammatistes",
+    "text": "Le cas des épigrammatistes\n\nS66 = P XI.273\nΧωλὸν ἔχεις τὸν νοῦν ὡς τὸν πόδα· καὶ γὰρ ἀληθῶς      εἰκόνα τῶν ἐντὸς σὴ φύσις ἐκτὸς ἔχει.\nBoiteux tu l’es, de l’esprit comme du pied : car à vrai dire      ta nature intérieure est à l’image de ton physique."
+  },
+  {
+    "objectID": "presentation_slides.html#section-1",
+    "href": "presentation_slides.html#section-1",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "",
+    "text": "Edilo 2020 (Indice)"
+  },
+  {
+    "objectID": "presentation_slides.html#lanthologie-grecque-un-cas-à-part",
+    "href": "presentation_slides.html#lanthologie-grecque-un-cas-à-part",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "L’Anthologie Grecque, un cas à part",
+    "text": "L’Anthologie Grecque, un cas à part\n\n\n\nAnthologie Palatine [AP] = Heid. Pal. gr. 23 + Par. suppl. gr. 384\nAnthologie de Planude = Marcianus gr. 481, où\n\nAppendix Planudea = 392 épigrammes absentes de AP\n\nAnthologie Grecque = AP + Appendix Pl.\n\n\n\n\n\nS. Beta. Io, un manoscritto, 2017\n\n\n\n\n\n\nL’Anthologie Grecque, ed. Les Belles Lettres"
+  },
+  {
+    "objectID": "presentation_slides.html#un-corpus-redéfini-par-ses-éditions",
+    "href": "presentation_slides.html#un-corpus-redéfini-par-ses-éditions",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Un corpus redéfini par ses éditions",
+    "text": "Un corpus redéfini par ses éditions\n\n\n\n\n\n\n\n\n\nReiske, Anthologiae graecae a Constantino Cephala conditae libri tres, 1754\n\n\n\n\n\n\n\nBrunck, Analecta veterum poetarum Graecorum, 1772–6\n\n\n\n\n\n\n\nJacobs, Anthologia Graeca, sive poetarum graecorum lusus, ex recensione Brunckii, 1813–7\n\n\n\n\n\n\n\n\n\nDübner, Epigrammatum Anthologia Palatina…, 1864–72\n\n\n\n\n\n\n\nStadtmüller, Anthologia Graeca Epigrammatum Palatina cum Planudea, 1894-1906\n\n\n\n\n\n\n\nLes Belles Lettres (Waltz et al.), Anthologie grecque, 1928-2011"
+  },
+  {
+    "objectID": "presentation_slides.html#éditions-tradition-le-cas-de-σπ-e.g.-ix.823",
+    "href": "presentation_slides.html#éditions-tradition-le-cas-de-σπ-e.g.-ix.823",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Éditions & Tradition, le cas de Σπ (e.g. IX.823)",
+    "text": "Éditions & Tradition, le cas de Σπ (e.g. IX.823)\n\n\n\n\n\nPal. gr. 23, p. 488, où main B (Xe s.) puis main postérieure (XII-XIIIe s.)\n\n\n\n\n\n\nIX.823 chez Jacobs (1813)\n\n\n\n\n\n\nIX.823, ed. Les Belles Lettres (1957)"
+  },
+  {
+    "objectID": "presentation_slides.html#dataification-des-témoins-et-des-variantes",
+    "href": "presentation_slides.html#dataification-des-témoins-et-des-variantes",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "“Dataification” des témoins et des variantes",
+    "text": "“Dataification” des témoins et des variantes\n\nDatabase-driven encoding under LaTeX then allows extraction of texts entered segment by segment according to various criteria: main edited text, variant readings, translations or annotated borrowings between texts. (R. Alessi, ekdosis (documentation), p. 2)"
+  },
+  {
+    "objectID": "presentation_slides.html#ex.-le-par.-suppl.-gr.-352",
+    "href": "presentation_slides.html#ex.-le-par.-suppl.-gr.-352",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Ex.: le Par. suppl. gr. 352",
+    "text": "Ex.: le Par. suppl. gr. 352\n\n\n\n\n\nDescription du Par. suppl. gr. 352 (L. Floridi)\n\n\n\n\n\n\nConspectus Siglorum (extrait) (L. Floridi)"
+  },
+  {
+    "objectID": "presentation_slides.html#ex.-le-par.-suppl.-gr.-352-latex",
+    "href": "presentation_slides.html#ex.-le-par.-suppl.-gr.-352-latex",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Ex.: le Par. suppl. gr. 352 : LaTeX",
+    "text": "Ex.: le Par. suppl. gr. 352 : LaTeX\n\n\nEncodage LaTeX\n\\DeclareWitness{Ss}{S\\textsuperscript{S}}{Par. suppl. gr. 352}[\n    settlement=Paris,\n    institution=BNF,\n    msName=Par. suppl. gr.,\n    idno=352,\n    origDate=s. XII--XIII,\n    locus=ff. 179\\textsuperscript{r} l. 23--182\\textsuperscript{v}]\n\nRendu -tei.xml\n&lt;/witness&gt;\n&lt;witness xml:id=\"F\"&gt;\n&lt;abbr type=\"siglum\"&gt;F&lt;/abbr&gt;\nLaur. Plut. 91 sup. 8\n&lt;msDesc&gt;\n&lt;msIdentifier&gt;\n&lt;settlement&gt;Firenze&lt;/settlement&gt;\n&lt;institution&gt;Laurenziana&lt;/institution&gt;\n&lt;idno&gt;91 sup. 8&lt;/idno&gt;\n&lt;msName&gt;Laur.&lt;/msName&gt;\n&lt;/msIdentifier&gt;\n&lt;msContents&gt;\n&lt;msItemStruct&gt;\n&lt;locus&gt;ff. 1&lt;hi rend=\"sup\"&gt;r&lt;/hi&gt;--6&lt;hi rend=\"sup\"&gt;v&lt;/hi&gt;&lt;/locus&gt;\n&lt;/msItemStruct&gt;\n&lt;/msContents&gt;\n&lt;history&gt;\n&lt;origin&gt;\n&lt;origDate&gt;s. XVI in.&lt;/origDate&gt;\n&lt;/origin&gt;\n&lt;/history&gt;\n&lt;/msDesc&gt;\n&lt;/witness&gt;"
+  },
+  {
+    "objectID": "presentation_slides.html#ex.-le-par.-suppl.-gr.-352-tei-pure",
+    "href": "presentation_slides.html#ex.-le-par.-suppl.-gr.-352-tei-pure",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Ex.: le Par. suppl. gr. 352 : TEI pure",
+    "text": "Ex.: le Par. suppl. gr. 352 : TEI pure\n&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;msDesc&gt;\n    &lt;msIdentifier&gt;\n        &lt;country&gt;France&lt;/country&gt;\n        &lt;settlement&gt;Paris&lt;/settlement&gt;\n        &lt;institution&gt;Bibliothèque nationale de France&lt;/institution&gt;\n        &lt;repository&gt;Suppl. gr.&lt;/repository&gt;\n        &lt;idno&gt;352&lt;/idno&gt;\n    &lt;/msIdentifier&gt;\n    &lt;physDesc&gt;\n        &lt;objectDesc form=\"codex\"&gt;\n            &lt;supportDesc&gt;\n                &lt;support&gt;Bombicina&lt;/support&gt;\n                &lt;extent&gt;I + 182 ff.\n                    &lt;dimensions scope=\"all\" unit=\"mm\"&gt;\n                        &lt;height&gt;330&lt;/height&gt;&lt;width&gt;250&lt;/width&gt;\n                    &lt;/dimensions&gt;\n                &lt;/extent&gt;\n            &lt;/supportDesc&gt;\n            &lt;condition&gt;\n                &lt;p&gt;I margini dei fogli recanti la silloge sono danneggiati. Perdite nei righi iniziali\n                    della colonna destra del f. 182r e della colonna sinistra del f. 182v. L’ultimo\n                    foglio è interessato da una lacuna che ha reso mutili alcuni epigrammi. Inchiostro\n                    sbiadito in alcuni punti.&lt;/p&gt;\n            &lt;/condition&gt;\n            &lt;layoutDesc&gt;\n                &lt;layout columns=\"2\"&gt;\n                    &lt;p&gt;Epigrammi disposti su due colonne da leggersi trasversalmente; paragraphos\n                        all’inizio di ogni componimento.&lt;/p&gt;\n                &lt;/layout&gt;\n            &lt;/layoutDesc&gt;\n        &lt;/objectDesc&gt;\n        &lt;handDesc hands=\"8\"&gt;\n            &lt;p&gt;Otto mani contemporanee riconosciute. La mano finale (designata come \"h\") subentra al\n                f. 150 e copia la silloge finale (f. 179r, l. 23 - 182v).&lt;/p&gt;\n        &lt;/handDesc&gt;\n        &lt;additions&gt;&lt;p&gt;Lemmi descrittivi nei margini. Nessun nome\n            d’autore indicato.&lt;/p&gt;\n        &lt;/additions&gt;\n    &lt;/physDesc&gt;\n    \n    &lt;history&gt;\n        &lt;origin&gt;\n            &lt;origDate notBefore=\"1100\" notAfter=\"1299\"&gt;XII-XIII secolo&lt;/origDate&gt;\n            &lt;origPlace cert=\"low\"&gt;\n                &lt;p&gt;Ambito italogreco secondo Guglielmo Cavallo; secondo Nigel Wilson, invece,\n                    Costantinopoli.&lt;/p&gt;\n            &lt;/origPlace&gt;\n        &lt;/origin&gt;\n    &lt;/history&gt;\n    &lt;msContents&gt;\n        &lt;msItem n=\"1\"&gt;\n            &lt;locus&gt;ff. 5v-150v&lt;/locus&gt;\n            &lt;title type=\"collection\"&gt;Antologia di opere in prosa&lt;/title&gt;\n            &lt;textLang mainLang=\"grc\"/&gt;\n            &lt;note&gt;Contiene: orazioni di Imerio, &lt;title&gt;De Natura Animalium&lt;/title&gt; e &lt;title&gt;Variae\n                    Historiae&lt;/title&gt; di Claudio Eliano, frammenti del &lt;title&gt;De rebus\n                    publicis&lt;/title&gt; di Eraclide Pontico, &lt;title&gt;De Expugnatione Cretae&lt;/title&gt; di\n                Teodosio Diacono, lettere di Filostrato, Teofilatto Simocatta, pseudo-Ippocrate,\n                Bruto, Alcifrone, e altri scritti minori. I ff. 1-4 sono un'aggiunta\n                posteriore.&lt;/note&gt;\n        &lt;/msItem&gt;\n        &lt;msItem n=\"2\"&gt;\n            &lt;locus&gt;ff. 151r-179r&lt;/locus&gt;\n            &lt;title&gt;Opere di Giovanni Geometra&lt;/title&gt;\n            &lt;textLang mainLang=\"grc\"/&gt;\n            &lt;note&gt;In prosa e in versi. Tre lacune stimate di almeno un quaternione ciascuna,\n                localizzate tra i ff. 150v-151r, 158v-159r, e 166v-167r.&lt;/note&gt;\n        &lt;/msItem&gt;\n        &lt;msItem n=\"3\"&gt;\n            &lt;locus&gt;f. 179r, l. 23 – 182v&lt;/locus&gt;\n            &lt;title&gt;Silloge anonima (SS)&lt;/title&gt;\n            &lt;textLang mainLang=\"grc\"/&gt;\n            &lt;note&gt;115 epigrammi senza nome d’autore, disposti su due colonne, segnati da\n                paragraphos. Prosegue senza soluzione di continuità dalla sezione precedente e\n                vergata dalla mano h. L’ultimo epigramma (S115) non è seguito dal segno consueto di\n                fine componimento; è quindi ipotizzabile una continuazione su un foglio\n                perduto.&lt;/note&gt;\n        &lt;/msItem&gt;\n    &lt;/msContents&gt;\n&lt;/msDesc&gt;"
+  },
+  {
+    "objectID": "presentation_slides.html#les-shorthands-encodage-latex",
+    "href": "presentation_slides.html#les-shorthands-encodage-latex",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Les Shorthands : encodage LaTeX",
+    "text": "Les Shorthands : encodage LaTeX\n\n\nLa Sylloge Parisina\n\\DeclareShorthand{_S}{S}{Ss,B,B1} \n\\DeclareWitness{Ss}{S\\textsuperscript{S}}{Par. suppl. gr. 352}[...]\n\\DeclareWitness{B}{B}{Par. gr. 1630}[...]\n\\DeclareWitness{B1}{\\emph{B}}{epigrammata in f. 62\\textsuperscript{v} cod. \\getsiglum{B}} \n\nLa Sylloge Laurentiana\n\\DeclareShorthand{_L}{L}{l} \n\\DeclareWitness{l}{Laur. Plut. 32.16}{Laur. Plut. 32.16}[\n    settlement=Firenze,\n    institution=Laurenziana,\n    msName=Laur. Plut.,\n    idno=32.16,\n    origDate=a. 1280--1283, \n    locus=ff. 3\\textsuperscript{r}--6\\textsuperscript{v}; 381\\textsuperscript{v}--384\\textsuperscript{r}]\n\nUne fois encodés\n\\note[type=tituli,labelb=S6_1a,labele=S6_6d]{Tit. Ἀμμιανοῦ \\getsiglum{P}~: s.a.n. \\getsiglum{_L, _S}}\n&lt;ref target=\"#l #Ss #B #B1\"&gt;"
+  },
+  {
+    "objectID": "presentation_slides.html#codd.-edd.",
+    "href": "presentation_slides.html#codd.-edd.",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "codd. / edd.",
+    "text": "codd. / edd.\n\ncodd. = codices (cod. = codex) → le(s) manuscrits\nedd. = editiones (ed. = édition) → les éditions\n\n\nS45"
+  },
+  {
+    "objectID": "presentation_slides.html#section-2",
+    "href": "presentation_slides.html#section-2",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "",
+    "text": "%%%45%%%\n\n\\begin{alignment}\n\\ekddiv{head={\\getsiglum{_S}45 (f. 180\\textsuperscript{v}) = \\getsiglum{B}1 (f. 135\\textsuperscript{r})}, depth=5, type=epigram}\n  \\begin{edition}\n    \\begin{ekdverse}[type={distique_élégiaque}]\n      \\indentpattern{01}\n      \\begin{patverse*}\n\n\\note[type=testium,nosep,nonum,labelb=S45_1a,labele=S45_6f]{\n    \\getsiglum{P} 10.27 (p. 494); \n    \\getsiglum{Pl} 1a.37.1 (f. 10\\textsuperscript{r}) [\\getsiglum{Q}, f. 10\\textsuperscript{r}]; \n    \\getsiglum{_L}37 (f. 4\\textsuperscript{r}); \n    \\getsiglum{Odorico1986} 69 (\\getsiglum{_Georg45_ALP0})}\n\\note[type=tituli,nosep,nonum,labelb=S45_1a,labele=S45_6f]{\n    Tit. Λουκιανοῦ \\getsiglum{Pl}~: \n    τοῦ αὐτοῦ (scil. Λουκιανοῦ) \\getsiglum{P}~: \n    Ἐρμίππου \\getsiglum{_Georg45_ALP}~: \n    s.a.n. \\getsiglum{Ss, B, _L, GeorgO}}\nἈνθρώπους μὲν \\app{\n  \\lem[wit={P, Pl, _L, _Georg45_LPO}]{ἴσως}\n  \\rdg[alt={om.}, wit={Ss, GeorgA, B}]{}\n  \\note{(sed in mg. man. rec. add.)}\n } λήσεις ἄτοπόν τι ποιήσας, \\\\ \nοὐ λήσεις \\app{\n  \\lem[wit={P, Pl, Ss, B, _Georg45_ALP},alt={δὲ θ.}]{δὲ}\n  \\rdg[wit={GeorgO},alt={δὲ καὶ θ.}]{δὲ καὶ}\n} \\app{\n  \\lem[wit={_codd45, MacLeod}]{θεὸν}\n  \\rdg[source={Lascaris}]{θεοὺς}\n  \\note{et edd. pl.}\n}οὐδὲ λογιζόμενος. \\linelabel{S45_6f} \\\\[1em]\n\n      \\end{patverse*}\n    \\end{ekdverse}\n  \\end{edition}\n\\end{alignment}"
+  },
+  {
+    "objectID": "presentation_slides.html#le-cas-des-lemmata",
+    "href": "presentation_slides.html#le-cas-des-lemmata",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "Le cas des lemmata",
+    "text": "Le cas des lemmata\n\nS41"
+  },
+  {
+    "objectID": "presentation_slides.html#section-3",
+    "href": "presentation_slides.html#section-3",
+    "title": "Bricoler une édition critique numérique. La Sylloge Parisina entre rigueur philologique et tâtonnements techniques",
+    "section": "",
+    "text": "%%%41%%%\n\\ekddiv{head={S41 (f. 180\\textsuperscript{v})}, depth=5, type=epigram}\n[...]\n\n\\note[type=testium,nosep,nonum,labelb=S41_1a,labele=S41_2f]{%\n    \\getsiglum{P} 9.721 (p. 476); \n    \\getsiglum{Pl} 4a.13.9 (f. 52\\textsuperscript{v}) \n    [\\getsiglum{Q}, f. 47\\textsuperscript{v}]}\n\\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{%\n    εἰς τὸ αὐτό \\getsiglum{Pl}~: \n    εἰς τὸν Μύρωνος βοῦν \\getsiglum{Ss}}\n\\note[type=tituli,nosep,nonum,labelb=S41_1a,labele=S41_2f]{%\n    Tit. τοῦ αὐτοῦ (scil. Ἀντιπάτρου Σιδωνίου) \\getsiglum{P, Pl}~: \n    s.a.n. \\getsiglum{Ss}}\n\n[...]\n\n%%%41%%%\n\\ekddiv{head={S41 (f. 180\\textsuperscript{v})}, depth=5, type=epigram}\n[...]\n\n\\note[type=testium,nosep,nonum,labelb=S41_1a,labele=S41_2f]{\\getsiglum{P} 9.721 (p. 476)} \n\\note[type=testium,nosep,nonum,labelb=S41_1a,labele=S41_2f]{\\getsiglum{Pl} 4a.13.9 (f. 52\\textsuperscript{v}) [\\getsiglum{Q}, f. 47\\textsuperscript{v}]} \n%\n\\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς τὸ αὐτό \\getsiglum{Pl}}\n\\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς τὸν Μύρωνος βοῦν \\getsiglum{Ss}}\n%\n\\note[type=tituli,nosep,nonum,labelb=S41_1a,labele=S41_2f]{Tit. τοῦ αὐτοῦ (scil. Ἀντιπάτρου Σιδωνίου) \\getsiglum{P, Pl}}\n\\note[type=tituli,nosep,nonum,labelb=S41_1a,labele=S41_2f]{s.a.n. \\getsiglum{Ss}}\n[...]\n\n\\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς \\app{\n    \\lem[wit=Ss]{τὸν Μύρωνος βοῦν}\n    \\rdg[wit=Pl]{εἰς τὸ αὐτό}\n}}"
+  }
+]
