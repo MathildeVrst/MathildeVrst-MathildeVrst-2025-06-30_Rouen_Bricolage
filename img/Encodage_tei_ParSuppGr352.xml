@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msDesc>
+    <msIdentifier>
+        <country>France</country>
+        <settlement>Paris</settlement>
+        <institution>Bibliothèque nationale de France</institution>
+        <repository>Suppl. gr.</repository>
+        <idno>352</idno>
+    </msIdentifier>
+    <physDesc>
+        <objectDesc form="codex">
+            <supportDesc>
+                <support>Bombicina</support>
+                <extent>I + 182 ff.
+                    <dimensions scope="all" unit="mm">
+                        <height>330</height><width>250</width>
+                    </dimensions>
+                </extent>
+            </supportDesc>
+            <condition>
+                <p>I margini dei fogli recanti la silloge sono danneggiati. Perdite nei righi iniziali
+                    della colonna destra del f. 182r e della colonna sinistra del f. 182v. L’ultimo
+                    foglio è interessato da una lacuna che ha reso mutili alcuni epigrammi. Inchiostro
+                    sbiadito in alcuni punti.</p>
+            </condition>
+            <layoutDesc>
+                <layout columns="2">
+                    <p>Epigrammi disposti su due colonne da leggersi trasversalmente; paragraphos
+                        all’inizio di ogni componimento.</p>
+                </layout>
+            </layoutDesc>
+        </objectDesc>
+        <handDesc hands="8">
+            <p>Otto mani contemporanee riconosciute. La mano finale (designata come "h") subentra al
+                f. 150 e copia la silloge finale (f. 179r, l. 23 - 182v).</p>
+        </handDesc>
+        <additions><p>Lemmi descrittivi nei margini. Nessun nome
+            d’autore indicato.</p>
+        </additions>
+    </physDesc>
+    
+    <history>
+        <origin>
+            <origDate notBefore="1100" notAfter="1299">XII-XIII secolo</origDate>
+            <origPlace cert="low">
+                <p>Ambito italogreco secondo Guglielmo Cavallo; secondo Nigel Wilson, invece,
+                    Costantinopoli.</p>
+            </origPlace>
+        </origin>
+    </history>
+    <msContents>
+        <msItem n="1">
+            <locus>ff. 5v-150v</locus>
+            <title type="collection">Antologia di opere in prosa</title>
+            <textLang mainLang="grc"/>
+            <note>Contiene: orazioni di Imerio, <title>De Natura Animalium</title> e <title>Variae
+                    Historiae</title> di Claudio Eliano, frammenti del <title>De rebus
+                    publicis</title> di Eraclide Pontico, <title>De Expugnatione Cretae</title> di
+                Teodosio Diacono, lettere di Filostrato, Teofilatto Simocatta, pseudo-Ippocrate,
+                Bruto, Alcifrone, e altri scritti minori. I ff. 1-4 sono un'aggiunta
+                posteriore.</note>
+        </msItem>
+        <msItem n="2">
+            <locus>ff. 151r-179r</locus>
+            <title>Opere di Giovanni Geometra</title>
+            <textLang mainLang="grc"/>
+            <note>In prosa e in versi. Tre lacune stimate di almeno un quaternione ciascuna,
+                localizzate tra i ff. 150v-151r, 158v-159r, e 166v-167r.</note>
+        </msItem>
+        <msItem n="3">
+            <locus>f. 179r, l. 23 – 182v</locus>
+            <title>Silloge anonima (SS)</title>
+            <textLang mainLang="grc"/>
+            <note>115 epigrammi senza nome d’autore, disposti su due colonne, segnati da
+                paragraphos. Prosegue senza soluzione di continuità dalla sezione precedente e
+                vergata dalla mano h. L’ultimo epigramma (S115) non è seguito dal segno consueto di
+                fine componimento; è quindi ipotizzabile una continuazione su un foglio
+                perduto.</note>
+        </msItem>
+    </msContents>
+</msDesc>

@@ -1,0 +1,9 @@
+/*-- scss:rules --*/
+
+.reveal .slide figure > figcaption,
+.reveal .slide img.stretch + p.caption,
+.reveal .slide img.r-stretch + p.caption {
+  font-size: 0.75em;
+  color: gray;
+  text-align: center;
+}

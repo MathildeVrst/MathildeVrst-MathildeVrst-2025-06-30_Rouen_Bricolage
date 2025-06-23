@@ -1,0 +1,168 @@
+---
+author: Mathilde Verstraete et Lucia Floridi
+title: Bricoler une édition critique numérique. <br>La *Sylloge Parisina* entre rigueur philologique et tâtonnements techniques 
+subtitle: Bricoler des éditions numériques (Rouen)
+date: 2025-07-01 
+lang: fr
+format: pdf
+mainfont: "Old Standard"
+fontsize: 12pt
+linestretch: 1.25
+---
+
+# I. Introduction 
+
+**[Sl. 1]** Bonjour à toutes et tous,
+
+Je vais vous présenter aujourd'hui un projet que je mène en collaboration avec Lucia Floridi --- qui n’a malheureusement pas pu se joindre à nous aujourd’hui pour des raisons de calendrier. 
+
+**[Sl. 2]** Lucia est philologue, helléniste, spécialiste de l’*Anthologie Grecque*, et elle a dirigé plusieurs éditions critiques d’épigrammatistes grecs : Hédyle, Lucillius, Straton de Sardes...
+
+Plus récemment, elle a réalisé l'édition critique de la *Sylloge Parisina* --- que je définirai juste après --- et m'a proposé de travailler à une double sortie --- papier et numérique --- de ladite édition. Je réalise ce travail avec LaTeX, et plus priciésment le paquet `ekdosis`, réalisé par Robert Alessi. La présentation d'aujourd'hui visera à vous présenter comment ces bidouillages et bricolages techniques permettent de repenser l'objet édité lui-même. <!--Ce projet, c’est, pour le dire simplement, l’édition d’une édition critique.-->
+
+Comme j'assume que le public d’aujourd’hui est assez interdisciplinaire, je me permets de définir brièvement ce qu’est une édition critique appliquée à un texte classique. **[Sl. 3]**
+
+## C'est quoi, une édition critique d'un texte classique ?
+
+Éditer un texte classique consiste à remonter le fil de sa tradition manuscrite. Il s’agit de retrouver --- ou du moins d’approcher --- une des versions du texte (selon les objectifs de l'édition) et d'en rendre compte de manière critique. Cette entreprise, nécessite une enquête minutieuse :
+
+- d’abord une recension des témoins (manuscrits, fragments, éditions anciennes); 
+- ensuite leur collation, c’est-à-dire leur comparaison pour faire apparaître les lieux où les manuscrits varients, là où il y a des variantes, et établir les liens qu'entretiennent les différents témoins entre eux; 
+- puis des choix éditoriaux pour proposer une version "restituée" du texte.
+
+Ce travail repose sur des principes parfois divergents, que nous n'avons pas le temps d'approfondir aujourd'hui. 
+
+Le travail final de l’éditeur scientifique doit répondre aux attentes d’un public spécialisé et doit se prêter à la recherche ainsi qu’à la lecture critique d’une source ou d’un auteur. Elle a une présentation bien particulière: au terme du processus d’établissement du texte, l’éditeur propose un texte mis à la disposition du lecteur, accompagné, en bas de page, d’un apparat critique. Peuvent y être ajoutées des analyses linguistique, littéraire ou historique ainsi que outils de repérages (comme des bibliographies et index). 
+
+**[Sl. 4]** Voici par exemple le rendu de l'épigramme S16 telle qu'édité par Lucia: 
+
+- Numérotation de l'épigramme; 
+- Folio correspondant dans le manuscrit principal; 
+- Attribution telle que donnée par les éditions précédentes + références aux pages concernées; 
+- Édition en elle-même, avec la mise en forme de la versification (le cas échéant) et les numérotations de vers 
+- Plusieurs apparats: 
+  - *Codices* dans lesquels l'épigramme est transmise, 
+  - *Lemmata*, descriptions de l'épigramme données généralement en marge par certains témoins, 
+  - *Tituli*, attributions données (généralement en marge) par certains témoins 
+  - *Critique* avec les variantes 
+- Traduction 
+
+La critique textuelle telle que nous la connaissance se systématise, parallèlement à la tradition imprimée, vers la fin du XVIII^e^ s., résultant de phénomènes historiques et culturels transmis depuis l’Antiquité que je vous épargne aujourd’hui.
+
+## Le cas des épigrammatistes
+
+**[Sl. 5]** Nous nous intéressons ici à un genre particulier : l’épigramme, de courts poèmes à l’origine destinés à être gravés — comme l’indique l’étymologie du mot. Il en existait de toutes sortes : funéraires, votives, amoureuses… Plus tard, le genre sera défini par sa brièveté et son trait piquant, comme en témoigne déjà cet exemple :
+
+> Exemple: S66 = P XI.273 Χωλὸν ἔχεις τὸν νοῦν ὡς τὸν πόδα· καὶ γὰρ ἀληθῶς | εἰκόνα τῶν ἐντὸς σὴ φύσις ἐκτὸς ἔχει. 
+>
+> Boiteux tu l’es, de l’esprit comme du pied : car à vrai dire | ta nature intérieure est à l’image de ton physique.
+
+Dans ses travaux, Lucia a choisi d'éditer des auteurs, des épigrammatistes dont les œuvres sont souvent fragmentaires et transmises de manière dispersée. **[Sl. 6]** Prenons le cas d’Hédyle: ses épigrammes nous parviennent principalement par l’*Anthologie Grecque*, mais aussi par des sylloges mineures, des sources indirectes (comme Athénée ou la Souda). 
+
+Éditer un auteur épigrammatique n'est pas la même chose que d'éditer l'*Anthologie Palatine*, ni l'*Anthologie Grecque*. Face à ce contenu, l'éditeur doit délimiter et définir son objet. Chaque édition implique des choix spécifiques, même si nous sommes tributaires des premières éditions qui ont été réalisées et des choix qui y ont été opérés. 
+
+## L’*Anthologie Grecque*, un cas à part
+
+**[Sl. 7]** Je viens de mentionner le terme *Anthologie Palatine*: il s'agit là du témoin principal de l'épigrammatique grecque. Cette appellation fait référence à la tradition manuscrite qui nous est parvenue par l'entremise des *Heid. Pal. gr.* 23 et *Par. suppl. gr.* 384 (un manuscrit byzantin du X^e^ siècle --- là non plus, je ne m'attarde pas, mais je ne peux que vous conseiller de vous procurer le livre "Moi, un manuscrit" de S. Beta). Plus fréquement, on entend plutôt le terme *Anthologie Grecque*, qui fait référence à l'*Anthologie Palatine* augmentée d'autres pièces. En effet, un autre manuscrit important contient des épigrammes: le *Marcianus gr.* 481, autographe du moine Maxime Planude, rédigé en 1299 ou 1301. Il est un peu moins conséquent, mais contient 392 épigrammes absentes du mauscrit palatin; celles-ci forment ce qu'on appelle l'*Appendix planudea*. L'*Anthologie Grecque* correspond traditionnellement à l'*Anthologie Palatine* et l'*Appendix planudea*, ajoutée "artificiellement".  
+
+D'un point de vue éditorial, l’*Anthologie Grecque*  ne constitue pas un texte stable, mais un corpus composite, mouvant, et dont les contours sont reconfigurés à chaque nouvelle édition.
+
+## Un corpus redéfini par ses éditions
+
+**[Sl. 8]** En effet, dès le XVIII^e^ siècle, les éditeurs modernes ont tenté d’ordonner ce vaste corpus, mais chacun le redéfinit selon ses propres critères.
+
+- Johann Jacob Reiske réalisa une édition partielle des épigrammes de l'*Anthologie Palatine* (*Anthologiae graecae a Constantino Cephala conditae libri tres*) (1752-1753), en les classant par auteurs; 
+- 20 ans plus tard (1772-1776), Richard François Philippe Brunck publia ses *Analecta veterum poetarum Graecorum*, où il classe aussi les épigrammes par auteurs; 
+- Au siècle suivant, Friedrich Jacobs (1813-1817), en se basant sur les travaux de Brunck publia ce que l'on considère être l'*editio princeps* de l'*Anthologie* : *Anthologia Graeca, sive poetarum graecorum lusus, ex recensione Brunckii*: il suit cette fois l'ordre du manuscrit palatin, classé en 14 livres thématique et augmenté d'un 15^e^ livre dit "artificiel", reprenant des pièces éparses dans le manuscrit. Il y ajouta ensuite l'*Appendix planudea*, soit les 392 épigrammes absentes du *Palatinus* mais présentes dans le *Marcianus*, ainsi qu'une autre appendice, l'*Appendix epigrammatum quae apud scriptores veteres passim et in marmoribus servata sunt*, contenant donc des épigrammes citées dans d'autres sources. 
+- Les éditions successives se basèrent sur les travaux de Jacobs et suivent toutes l'ordre du manuscrit palatin: les épigrammes sont éditées selon les 14 livres thématiques de l'*Anthologie Palatine*, auxquels on ajoute ce 15^e^ livre artificiel ainsi que l'*Appendix planudea*. Y sont par contre absentes les épigrammes issues d'autres sources (constituant la derniere appendice chez Jacobs). Citons par exemple : 
+    - la Didotiana en deux volumes de Johann Friedrich Dübner (1864-1872); 
+    - la Teubneriana de Hugo Stadtmüller (1894-1906), qu'il n'a pu terminer; 
+    - l'édition Budé, réalisée par Waltz et tant d'autres (1928-2011); 
+    - la Tusculum Bücherei en 4 tomes de Hermann Beckby (1957-1958, revue et amplifiée 1965-1967).
+
+Cette tradition éditoriale "monolithique", pour reprendre l’expression de Lucia, a pour effet de gommer la diversité des autres traditions anthologiques: les sylloges mineures, les sources fragmentaires, les variantes structurelles ou textuelles. D'ailleurs, ces premières éditions ont largement façonné notre compréhension du corpus! **[Sl. 9]** Par exemple, Jacobs a inséré dans son édition certaines des épigrammes de la sylloge Σ^π^ (soit, des épigrammes insérées ça et là dans la *Palatinus* par une main du XII ou XIII^e^ siècle) comme si elles appartenaient à l'*Anthologie Palatine* en tant que telle. 
+
+Les autres sources présentant des épigrammes ne se retrouvent pas dans ces dernières éditions, si ce n'est la Didotienne, en deux tomes, auxquels s'ajoute un troisième par Cougny, intitulé *Appendix nova epigrammatum veterum ex libris et marmoribus ductorum* (1890) dans laquelle on retrouve les épigrammes issues des sylloges mineures (donc des traditions plus petites et indépendantes d'épigrammes) qui ne se retrouvent ni dans P ni dans Pl et des poèmes issues d'autres sources. 
+
+Ce qu'il faut retenir de tout cela, c'est que l’*Anthologie Grecque* n’est pas un objet donné, clos et stabilisé, mais plutôt une construction éditoriale. L’éditeur doit délimiter son corpus, négotier avec une tradition plurielle, démêler les nombreuses sources. Que veut-on éditer? Un auteur, une tradition, un témoin? Nous aborderons cette question à nouveau un peu plus tard. 
+
+<!--
+## Les enjeux
+
+On le voit : l’édition critique d’un auteur comme Hédyle ne peut pas se limiter à une source unique. Elle implique de croiser les traditions, d’enquêter sur les manuscrits, les éditions imprimées, les sources indirectes. C’est ce travail — exigeant, lent, mais heuristiquement très fécond — que Lucia a accompli, et que nous tentons maintenant de prolonger dans un environnement numérique, en interrogeant à la fois les modèles de transmission et les formes éditoriales.
+
+On est vraiment face à une problème de définition de l’objet étudié et édité. -->
+
+# II. L'encodage en LaTeX comme terrain d'expérimentation
+
+**[Sl. 10]** J’en viens à la deuxième partie de cette présentation : le projet en cours d’édition de la *Sylloge Parisina*, une sylloge mineure composée de 115 épigrammes, parmi lesquelles se distinguent un certain nombre de pièces amoureuses, notamment celles qui ne se retrouvent dans aucune autre source.
+
+Lors d’un échange à l’Université de Bologne, Lucia m’a proposé de reprendre l'édition qu’elle avait commencée depuis plusieurs années --- et laissée, selon ses mots, "dans un tiroir". Peu de temps avant, j’avais rencontré Robert Alessi, du CNRS, et découvert ses travaux sur `ekdosis`, un paquet LaTeX pensé pour le typesetting d’éditions critiques conformes à la TEI-XML.
+
+C’est de cette rencontre qu’est née l’idée d’utiliser `ekdosis` pour éditer la *Parisina*, un corpus de taille raisonnable, mais exigeant sur le plan éditorial --- un excellent terrain d’expérimentation.
+
+Lucia avait travaillé avec des outils traditionnels --- Microsoft Word pour ne pas le citer ---, alors que de mon côté j’ai repris son texte pour l’encoder en LaTeX, avec un double objectif : générer une sortie PDF conforme aux standards de l’imprimé, et produire un fichier XML-TEI pour une édition numérique enrichie.
+
+Mais rapidement, l'encodage s’est révélé être bien plus qu’un exercice technique ou qu'un geste mécanique: il nous a poussées à réfléchir à nos choix éditoriaux. Passer d’un texte saisi dans un traitement de texte à un encodage structuré nous oblige à expliciter des décisions souvent implicites, à interroger des conventions héritées. Autrement dit, cette démarche remet en jeu l’autorité des formes éditoriales. Je vais vous donner quelques exemples concrets de ces questionnements apparus en cours d’encodage:
+
+### La “dataification” des témoins et des variantes
+
+**[Sl. 11]** Dans l'abstract accompagnant la documentation d'ekdosis, Robert Alessi écrit ceci: 
+
+> Database-driven encoding under LaTeX then allows extraction of texts entered segment by segment according to various criteria: main edited text, variant readings, translations or annotated borrowings between texts.
+
+**[Sl. 12]** Avec `ekdosis`, nos manuscrits et nos variantes deviennent des données. Une édition critique est généralement composée d'une vaste introduction, dans laquelle on trouve, entre autre, une description des témoins. Ensuite, un *Conspectus Siglorum* où on trouve une description sommaire des manuscrits utilisés accompagnés de leur sigle. Avec `ekdosis`, on vient "déclarer" ces témoins dans le préambule, de manière structurée, formalisée. **[Sl. 13]** `ekdosis` permet d'encoder plusieurs éléments propres au manuscrit (définir de façon plus précise l'endroit où il est conservé, sa date, les folios concernés, etc.) et rend le tout dans un fichier TEI-XML. 
+**[Sl. 14]** Ce TEI-XML pourrait être plus complet: voici une version encodée directement en TEI plutôt qu'en LaTeX. <!--On pourrait tout à fait décrire de façon très complète un manuscrit dans le fichier `.tex`, n'afficher que le nécessaire dans le `.pdf` et avoir une plus exhaustive pour la version numérique. -->
+
+Toujours en LaTeX, on peut aller plus loin, en spécifiant les différentes mains, ou alors les éditeurs (sources secondaires) apportant des conjectures au fil de leurs éditions. 
+Ces témoins deviennent donc des *data*, des données; d'un point de vue épistémologique, ce n'est pas nouveau: Martin West, dans ses *Textual Criticism and Editorial Technique*, employait déjà le terme *data* à propos des témoins et de leurs leçons; mais d'un point de vue concret, formel, ces données deviennent encodées, et donc lisibles, compréhensibles par des machines. 
+
+**[Sl. 15]** Ces témoins ensuite peuvent être encodées dans des *Shorthands*, permettant de grouper un ensemble de témoins en famille, ou, dans notre cas, en sylloge. Dans certains cas, c'est intéressant (comme pour la *Parisina* qui a plusieurs témoins), dans d'autres, un peu moins -- quoique (comme la *Laurentiana* qui n'a qu'un seul témoin). 
+
+### *codd.* / *edd.*
+
+**[Sl. 16]** Autre point que je trouve particulièrement intéressant. Comme vous vous en doutez, les éditions critiques sont pleines d'abréviations multiples et variées, que le lecteur averti identifie d'ordinaire sans peine. Cependant, pour rester dans cette optique de *dataification*, je ne peux me permettre de simplement encoder "codd.": pour la machine, ça ne veut rien dire. 
+
+*Codd.* est l'abréviation de *codices*, les manuscrits. Dans la tradition papier, son usage est si répandu qu'on n'y pense même plus, on lit et on comprend *les manuscrits* comme un tout, comme un ensemble indifférencié et insécable. Mais ici, je suis dans un environnement structuré, il me faut choisir explicitement les manuscrits en question, précédemment déclarés dans le préambule --- ce qui me pousse à m'assurer qu'ils possèdent bien la variante en question. J'ai moins de scrupule à écrire 5 caractères qu'à effectivement encoder un ensemble de données: je ne peux plus désigner globalement un ensemble de témoins, mais il nous faut les examiner uns par uns. L'encodage joue un rôle sur la pratique même de l'éditeur en ce qu'il le pousse à revenir au détail, à vérifier ce qui a été dit dans les éditions précédentes, à ne pas présumer un consensus des manuscrits. 
+
+C'est sensiblement la même chose pour *edd.*, l'abréviation de *editiones*. Souvent, une conjecture aura été introduite par un éditeur et reprise par toutes les éditions successives, mais le geste de l'encodage formel me pousse à aller vérifier, une par une, les éditions en question. 
+
+Ensuite, une particularité de notre corpus, est que *codd.* et *edd.* n'ont pas la même valeur d'épigramme en épigramme. En effet, Lucia, pour chaque poème, rappelle les témoins dans lesquels se trouvent une pièce; le *codd.* est donc contextuel, le contexte étant rappelé dans l'apparat de chaque poème. Il en va de même pour les éditions, mais dans ce cas, il est attendu que le lecteur sache quelles édition il doit consulter. 
+
+**[Sl. 17]** Montrer l'exemple S45. 
+
+La dataification, la formalisation exigée par l'encodage LaTeX et TEI nous oblige ici à désambiguïser des vérités ce que l’on pouvait écrire en considérant une lecture un peu plus générale. Il nous importe ici d'expliciter ce qui était jusqu'alors implicite. 
+
+### Quid des *lemmata* ? 
+
+**[Sl. 18]** Un autre point qui m'a mis un peu dans l'embarras, c'est la question des *lemmata*. Dans les manuscrits palatin et planudéen, les épigrammes sont souvent accompagnées de *lemmata* (des sortes de notes explicatives ou descriptives) et d’adscriptions (attributions à un auteur). La *Sylloge Parisina* en contient généarlement moins.
+
+Lucia les a séparés dans un apparat spécifique: un pour les *lemmata*, un pour les attributions. Restons ici sur les *lemmata*. **[Sl. 19]** Leur encodage peut suivre plusieurs modèles:
+
+- soit je déclare un apparat, d'un type particulier, puis j'indique, à la suite, les lemmata que l'on trouve dans les différents manuscrits ou différentes traditions; 
+- soit, je déclare autant d'apparats, toujours de ce type particulier, qu'il y de leçons; 
+- soit, je déclare ce niveau d'apparat et je déclare chacune des leçons comme une variante à part entière. Cela implique donc la création d'un apparat au sein d'un autre apparat (ou au sein d'un autre niveau de notes). 
+
+Ces options nous ont forcées à clarifier la nature des objets édités: édite-t-on les lemmata ? Non --- les poèmes sont l’objet principal de l’édition, tandis que les lemmata offrent un contexte. Ils ne sont pas édités au sens strict, mais documentés comme données complémentaires issues des témoins. Encore une fois, l’encodage impose de poser explicitement ce qui relève du texte et ce qui l’entoure.
+
+<!--
+### Question de l'apparat négatif 
+
+Enfin, on peut aussi se poser la question de l'apparat négatif. Un apparat peut-être positif (on y indique alors les manuscrits  qui présentent la variante choisie par l’éditeur) ou négatif (on indique uniquement les manuscrits présentant une variante). Outre l'utilisation des signes qui changent légèrement (`:` vs `]`), la distinction est surtout importante pour l'envoi des données en dans le format XML-TEI. Depuis quelques semaines, `ekdosis` permet la production d'un apparat critique négatif, dans la version PDF, XML-TEI, ou les deux. Il est donc possible d'avoir un apparat négatif dans la version imprimée, tout en ayant les témoins correctement encodés pour la version numérique. Mais encore une fois, cela implique que je vérifie bel et bien mes témoins. 
+--> 
+
+## Remarques 
+
+Par tous ces exemples, j'espère avoir pu démontrer que l’encodage (que, dans ma pratique, j'apparente un peu à du bricolage) n’est pas une opération secondaire ou mécanique, mais une activité critique à part entière. Il ne s’agit pas de “mettre en données” un texte déjà établi, mais de réfléchir à la forme même que prend l’édition et sur quel sous-texte elle repose. Ce travail d'encodage s'apparente à un laboratoire pour interroger les pratiques philologiques.
+
+# III. Conclusion
+
+**[Sl. 20]** Ce projet constitue une expérimentation concrète. Il est mené en collaboration avec les PURH, qui publieront le résultat de ce travail dans une nouvelle collection intitulée *Aldines*. De plusieurs façons, les PURH et cette nouvelle collection viennent bousculer, encore un peu plus, les pratiques traditionnelles et si souvent figées de la philologie classique.
+
+En effet, en plus de proposer une double sortie, les PURH nous demandent une édition bi- (ou plutôt tri-)lingue, ce qui, à notre connaissance, n’a encore jamais été fait dans ce domaine. Sceptique au départ, je reconnais que l’ajout de traductions françaises aux textes grecs et italiens établis par Lucia s’est révélé être un exercice particulièrement riche et stimulant --- mais je n’entre pas ici dans le détail ; je vous invite plutôt à lire la préface générale de l’ouvrage lorsqu’il paraîtra pour des illustrations plus concrètes.
+
+Sur le plan scientifique, la version numérique permet d'aller plus loin dans la compréhension de la *Sylloge*: je ne peux malheureusement pas vous en dire beaucoup, la version numérique étant loin d'être prête --- j'en suis pleinement responsable. Mais concrètement, le double format --- imprimé et numérique --- de l’édition ne répond pas seulement à des logiques de diffusion: il propose deux modalités complémentaires d’exploration du texte. L’édition imprimée, en s’appuyant sur des conventions établies, permet une consultation classique de l’apparat et une lecture continue, conforme aux usages académiques classiques et traditionnels. Quant à l’édition numérique, elle ouvre la voie à une série de visualisations alternatives: ça et là dans la *Sylloge*, des épigrammes ont été réduites d'un ou de plusieurs vers; la version numérique permettra de rétablir la version *plenior* de celles-ci. Les variantes transmises par d’autres témoins pourront être visualisées de manière plus claire et plus immédiate. Les images des manuscrits devraient également --- si tout se passe bien avec les bibliothèques --- être consultables directement. En somme, cette version numérique vise à rendre plus sensible la mobilité de ces textes, leur plasticité formelle, leur capacité à circuler, se fragmenter, se recomposer au fil des recueils et des usages.
+
+Ces possibilités de visualisation s’accompagnent, bien sûr, d’une reconfiguration épistémologique plus profonde des normes de la discipline --- transformation que j’ai évoquée plus haut, et que ce projet cherche à expliciter, voire, qui sait, à théoriser.
+
+Voici donc les résultats préliminaires d’un travail de bricolage, à la fois technique et philologique, mené sur ce beau corpus qu’est la *Sylloge Parisina*.

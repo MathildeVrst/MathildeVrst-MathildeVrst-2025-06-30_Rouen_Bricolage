@@ -1,0 +1,448 @@
+---
+title: Bricoler une édition critique numérique. <br>La *Sylloge Parisina* entre rigueur philologique et tâtonnements techniques 
+subtitle: Bricoler des éditions numériques (Rouen)
+author:
+  - name: Mathilde Verstraete
+    email: mathilde.verstraete@umontreal.ca
+    affiliations: Université de Montréal -- CRC sur les Écritures numériques
+  - name: Lucia Floridi
+    email: lucia.floridi2@unibo.it
+    affiliations: Alma Mater Studiorum -- Università di Bologna 
+lang: fr
+date: 2025-07-01 
+date-format: long
+title-slide-attributes: 
+  data-notes: 
+format: 
+  revealjs:
+    slide-number: true
+    preview-links: auto
+    footer: "Rouen -- 30 juin/01 juillet 2025"
+    theme: [scss/clean.scss, scss/caption.scss]
+---
+
+# I. Introduction 
+
+::: {.columns}
+::: {.column}
+![Lucillio. *Epigrammi. Introduzione, testo critico, traduzione e commento* a cura di L.F., Texte und Kommentare 47, De Gruyter, Berlin/Boston 2014](img/Lucillio2014.jpeg){.lightbox height="400"}
+:::
+::: {.column}
+![Edilo. *Epigrammi. Introduzione, testo critico, traduzione e commento* a cura di L.Floridi, Texte und Kommentare 64, De Gruyter, Berlin/Boston 2020](img/Edilo2020.jpeg){.lightbox height="400"}
+:::
+::: 
+
+
+## C'est quoi, une édition critique d'un texte classique ?
+
+- Ecdotique : Art d’éditer les textes d’après une méthode critique ; 
+- ἔκδοσις < ἐκδίδωμι : produire au dehors, faire passer en d’autres mains, confier ; publier ; 
+- Plusieurs étapes: 
+    - *Recensio* ;
+    - *Collatio* ;
+    - *Emendatio* ;
+    - *Dispositio*. 
+
+## 
+
+![Sylloge Parisina (S16)](img/S16.drawio.png)
+
+## Le cas des épigrammatistes
+
+
+> S66 = P XI.273 
+> 
+> Χωλὸν ἔχεις τὸν νοῦν ὡς τὸν πόδα· καὶ γὰρ ἀληθῶς <br>
+> &nbsp; &nbsp; εἰκόνα τῶν ἐντὸς σὴ φύσις ἐκτὸς ἔχει. 
+>
+> Boiteux tu l’es, de l’esprit comme du pied : car à vrai dire <br>
+> &nbsp; &nbsp; ta nature intérieure est à l’image de ton physique.
+
+## 
+
+![Edilo 2020 (Indice)](img/Edilo2020_indice.png){.lightbox height=600}
+
+## L’*Anthologie Grecque*, un cas à part
+
+::: {.columns}
+::: {.column width="80%"}
+
+- *Anthologie Palatine* [*AP*] = *Heid. Pal. gr.* 23 + *Par. suppl. gr.* 384 
+- *Anthologie de Planude* = *Marcianus gr.* 481, où 
+  - *Appendix Planudea* = 392 épigrammes absentes de *AP* 
+- *Anthologie Grecque* = *AP* + *Appendix Pl.* 
+
+:::
+::: {.column width="20%"}
+![S. Beta. *Io, un manoscritto*, 2017](img/beta.jpg){.lightbox width="80"}
+:::
+::: 
+
+
+![L'*Anthologie Grecque*, ed. Les Belles Lettres](img/ed_belleslettres.png){.lightbox height="300"} 
+
+## Un corpus redéfini par ses éditions
+
+::: {layout-nrow=2} 
+
+![Reiske, *Anthologiae graecae a Constantino Cephala conditae libri tres*, 1754](img/Reiske1754.png){.lightbox height="200"} 
+
+![Brunck, *Analecta veterum poetarum Graecorum*, 1772--6](img/Brunck1772.png){.lightbox height="200"}
+
+![Jacobs, *Anthologia Graeca, sive poetarum graecorum lusus, ex recensione Brunckii*, 1813--7](img/Jacobs1813.png){.lightbox height="200"}
+
+![Dübner, *Epigrammatum Anthologia Palatina...*, 1864--72](img/Dubner1871.png){.lightbox height="200"}
+
+![Stadtmüller, *Anthologia Graeca Epigrammatum Palatina cum Planudea*, 1894-1906](img/Stadtmuller1894.png){.lightbox height="200"}
+
+![Les Belles Lettres (Waltz et al.), *Anthologie grecque*, 1928-2011](img/Bude1928.png){.lightbox height="200"}
+
+:::
+
+## Éditions & Tradition, le cas de Σ^π^ (*e.g.* IX.823)
+
+::: {.columns}
+::: {.column width="32%"}
+
+![Pal. gr. 23, p. 488, où main B (X^e^ s.) puis main postérieure (XII-XIII^e^ s.)](img/cpgraec23_0514.jpg){.lightbox}
+
+:::
+::: {.column width="32%"}
+
+![IX.823 chez Jacobs (1813)](img/9_823_Jacobs.png){.lightbox}
+
+:::
+::: {.column width="32%"}
+
+![IX.823, ed. Les Belles Lettres (1957)](img/9_823_Bude.png){.lightbox height=500}
+
+:::
+::: 
+
+# II. L'encodage en LaTeX comme terrain d'expérimentation
+
+::: {.columns}
+::: {.column}
+
+- Projet en cours 
+- Édition d'une édition 
+- L. Floridi : édition critique de la *Sylloge Parisina* : 
+  - Sylloge mineure, 
+  - 115 épigrammes 
+- Publication double format aux PURH (coll. *Aldines*) 
+- `ekdosis` 
+
+:::
+::: {.column}
+
+![](img/Parisina.drawio.png)
+
+:::
+:::
+
+## “Dataification” des témoins et des variantes
+
+> Database-driven encoding under LaTeX then allows extraction of texts entered segment by segment according to various criteria: main edited text, variant readings, translations or annotated borrowings between texts. (R. Alessi, `ekdosis` (documentation), p. 2)
+
+## Ex.: le *Par. suppl. gr.* 352 
+
+::: {.columns}
+::: {.column}
+![Description du *Par. suppl. gr.* 352 (L. Floridi)](img/SyllPar_ParSuppGr352_descr.png){.lightbox}
+:::
+::: {.column}
+![*Conspectus Siglorum* (extrait) (L. Floridi)](img/Conspectus_ParSuppGr352.png){.lightbox}
+
+:::
+::: 
+
+
+## Ex.: le *Par. suppl. gr.* 352 : LaTeX 
+
+::: {.columns}
+::: {.column}
+Encodage `LaTeX` 
+
+```latex
+\DeclareWitness{Ss}{S\textsuperscript{S}}{Par. suppl. gr. 352}[
+    settlement=Paris,
+    institution=BNF,
+    msName=Par. suppl. gr.,
+    idno=352,
+    origDate=s. XII--XIII,
+    locus=ff. 179\textsuperscript{r} l. 23--182\textsuperscript{v}]
+```
+:::
+::: {.column}
+Rendu `-tei.xml` 
+
+```xml
+</witness>
+<witness xml:id="F">
+<abbr type="siglum">F</abbr>
+Laur. Plut. 91 sup. 8
+<msDesc>
+<msIdentifier>
+<settlement>Firenze</settlement>
+<institution>Laurenziana</institution>
+<idno>91 sup. 8</idno>
+<msName>Laur.</msName>
+</msIdentifier>
+<msContents>
+<msItemStruct>
+<locus>ff. 1<hi rend="sup">r</hi>--6<hi rend="sup">v</hi></locus>
+</msItemStruct>
+</msContents>
+<history>
+<origin>
+<origDate>s. XVI in.</origDate>
+</origin>
+</history>
+</msDesc>
+</witness>
+```
+
+:::
+::: 
+
+## Ex.: le *Par. suppl. gr.* 352 : TEI pure 
+
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<msDesc>
+    <msIdentifier>
+        <country>France</country>
+        <settlement>Paris</settlement>
+        <institution>Bibliothèque nationale de France</institution>
+        <repository>Suppl. gr.</repository>
+        <idno>352</idno>
+    </msIdentifier>
+    <physDesc>
+        <objectDesc form="codex">
+            <supportDesc>
+                <support>Bombicina</support>
+                <extent>I + 182 ff.
+                    <dimensions scope="all" unit="mm">
+                        <height>330</height><width>250</width>
+                    </dimensions>
+                </extent>
+            </supportDesc>
+            <condition>
+                <p>I margini dei fogli recanti la silloge sono danneggiati. Perdite nei righi iniziali
+                    della colonna destra del f. 182r e della colonna sinistra del f. 182v. L’ultimo
+                    foglio è interessato da una lacuna che ha reso mutili alcuni epigrammi. Inchiostro
+                    sbiadito in alcuni punti.</p>
+            </condition>
+            <layoutDesc>
+                <layout columns="2">
+                    <p>Epigrammi disposti su due colonne da leggersi trasversalmente; paragraphos
+                        all’inizio di ogni componimento.</p>
+                </layout>
+            </layoutDesc>
+        </objectDesc>
+        <handDesc hands="8">
+            <p>Otto mani contemporanee riconosciute. La mano finale (designata come "h") subentra al
+                f. 150 e copia la silloge finale (f. 179r, l. 23 - 182v).</p>
+        </handDesc>
+        <additions><p>Lemmi descrittivi nei margini. Nessun nome
+            d’autore indicato.</p>
+        </additions>
+    </physDesc>
+    
+    <history>
+        <origin>
+            <origDate notBefore="1100" notAfter="1299">XII-XIII secolo</origDate>
+            <origPlace cert="low">
+                <p>Ambito italogreco secondo Guglielmo Cavallo; secondo Nigel Wilson, invece,
+                    Costantinopoli.</p>
+            </origPlace>
+        </origin>
+    </history>
+    <msContents>
+        <msItem n="1">
+            <locus>ff. 5v-150v</locus>
+            <title type="collection">Antologia di opere in prosa</title>
+            <textLang mainLang="grc"/>
+            <note>Contiene: orazioni di Imerio, <title>De Natura Animalium</title> e <title>Variae
+                    Historiae</title> di Claudio Eliano, frammenti del <title>De rebus
+                    publicis</title> di Eraclide Pontico, <title>De Expugnatione Cretae</title> di
+                Teodosio Diacono, lettere di Filostrato, Teofilatto Simocatta, pseudo-Ippocrate,
+                Bruto, Alcifrone, e altri scritti minori. I ff. 1-4 sono un'aggiunta
+                posteriore.</note>
+        </msItem>
+        <msItem n="2">
+            <locus>ff. 151r-179r</locus>
+            <title>Opere di Giovanni Geometra</title>
+            <textLang mainLang="grc"/>
+            <note>In prosa e in versi. Tre lacune stimate di almeno un quaternione ciascuna,
+                localizzate tra i ff. 150v-151r, 158v-159r, e 166v-167r.</note>
+        </msItem>
+        <msItem n="3">
+            <locus>f. 179r, l. 23 – 182v</locus>
+            <title>Silloge anonima (SS)</title>
+            <textLang mainLang="grc"/>
+            <note>115 epigrammi senza nome d’autore, disposti su due colonne, segnati da
+                paragraphos. Prosegue senza soluzione di continuità dalla sezione precedente e
+                vergata dalla mano h. L’ultimo epigramma (S115) non è seguito dal segno consueto di
+                fine componimento; è quindi ipotizzabile una continuazione su un foglio
+                perduto.</note>
+        </msItem>
+    </msContents>
+</msDesc>
+
+```
+
+## Les Shorthands : encodage LaTeX
+
+::: {.columns}
+::: {.column}
+La *Sylloge Parisina* 
+
+```latex
+\DeclareShorthand{_S}{S}{Ss,B,B1} 
+\DeclareWitness{Ss}{S\textsuperscript{S}}{Par. suppl. gr. 352}[...]
+\DeclareWitness{B}{B}{Par. gr. 1630}[...]
+\DeclareWitness{B1}{\emph{B}}{epigrammata in f. 62\textsuperscript{v} cod. \getsiglum{B}} 
+
+```
+
+:::
+::: {.column}
+La *Sylloge Laurentiana*
+
+```latex
+\DeclareShorthand{_L}{L}{l} 
+\DeclareWitness{l}{Laur. Plut. 32.16}{Laur. Plut. 32.16}[
+    settlement=Firenze,
+    institution=Laurenziana,
+    msName=Laur. Plut.,
+    idno=32.16,
+    origDate=a. 1280--1283, 
+    locus=ff. 3\textsuperscript{r}--6\textsuperscript{v}; 381\textsuperscript{v}--384\textsuperscript{r}]
+```
+:::
+:::
+
+Une fois encodés 
+
+```latex
+\note[type=tituli,labelb=S6_1a,labele=S6_6d]{Tit. Ἀμμιανοῦ \getsiglum{P}~: s.a.n. \getsiglum{_L, _S}}
+```
+```xml
+<ref target="#l #Ss #B #B1">
+```
+
+## *codd.* / *edd.*
+
+- *codd.* = codices (*cod.* = codex) → le(s) manuscrits 
+- *edd.* = editiones (*ed.* = édition) → les éditions 
+
+![S45](img/S45.drawio.png)
+
+## 
+
+```latex
+%%%45%%%
+
+\begin{alignment}
+\ekddiv{head={\getsiglum{_S}45 (f. 180\textsuperscript{v}) = \getsiglum{B}1 (f. 135\textsuperscript{r})}, depth=5, type=epigram}
+  \begin{edition}
+    \begin{ekdverse}[type={distique_élégiaque}]
+      \indentpattern{01}
+      \begin{patverse*}
+
+\note[type=testium,nosep,nonum,labelb=S45_1a,labele=S45_6f]{
+    \getsiglum{P} 10.27 (p. 494); 
+    \getsiglum{Pl} 1a.37.1 (f. 10\textsuperscript{r}) [\getsiglum{Q}, f. 10\textsuperscript{r}]; 
+    \getsiglum{_L}37 (f. 4\textsuperscript{r}); 
+    \getsiglum{Odorico1986} 69 (\getsiglum{_Georg45_ALP0})}
+\note[type=tituli,nosep,nonum,labelb=S45_1a,labele=S45_6f]{
+    Tit. Λουκιανοῦ \getsiglum{Pl}~: 
+    τοῦ αὐτοῦ (scil. Λουκιανοῦ) \getsiglum{P}~: 
+    Ἐρμίππου \getsiglum{_Georg45_ALP}~: 
+    s.a.n. \getsiglum{Ss, B, _L, GeorgO}}
+Ἀνθρώπους μὲν \app{
+  \lem[wit={P, Pl, _L, _Georg45_LPO}]{ἴσως}
+  \rdg[alt={om.}, wit={Ss, GeorgA, B}]{}
+  \note{(sed in mg. man. rec. add.)}
+ } λήσεις ἄτοπόν τι ποιήσας, \\ 
+οὐ λήσεις \app{
+  \lem[wit={P, Pl, Ss, B, _Georg45_ALP},alt={δὲ θ.}]{δὲ}
+  \rdg[wit={GeorgO},alt={δὲ καὶ θ.}]{δὲ καὶ}
+} \app{
+  \lem[wit={_codd45, MacLeod}]{θεὸν}
+  \rdg[source={Lascaris}]{θεοὺς}
+  \note{et edd. pl.}
+}οὐδὲ λογιζόμενος. \linelabel{S45_6f} \\[1em]
+
+      \end{patverse*}
+    \end{ekdverse}
+  \end{edition}
+\end{alignment}
+```
+
+## Le cas des *lemmata*
+
+![S41](img/S41.drawio.png)
+
+## 
+
+::: {.columns}
+::: {.column}
+```latex
+%%%41%%%
+\ekddiv{head={S41 (f. 180\textsuperscript{v})}, depth=5, type=epigram}
+[...]
+
+\note[type=testium,nosep,nonum,labelb=S41_1a,labele=S41_2f]{%
+    \getsiglum{P} 9.721 (p. 476); 
+    \getsiglum{Pl} 4a.13.9 (f. 52\textsuperscript{v}) 
+    [\getsiglum{Q}, f. 47\textsuperscript{v}]}
+\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{%
+    εἰς τὸ αὐτό \getsiglum{Pl}~: 
+    εἰς τὸν Μύρωνος βοῦν \getsiglum{Ss}}
+\note[type=tituli,nosep,nonum,labelb=S41_1a,labele=S41_2f]{%
+    Tit. τοῦ αὐτοῦ (scil. Ἀντιπάτρου Σιδωνίου) \getsiglum{P, Pl}~: 
+    s.a.n. \getsiglum{Ss}}
+
+[...]
+```
+:::
+::: {.column}
+```latex
+%%%41%%%
+\ekddiv{head={S41 (f. 180\textsuperscript{v})}, depth=5, type=epigram}
+[...]
+
+\note[type=testium,nosep,nonum,labelb=S41_1a,labele=S41_2f]{\getsiglum{P} 9.721 (p. 476)} 
+\note[type=testium,nosep,nonum,labelb=S41_1a,labele=S41_2f]{\getsiglum{Pl} 4a.13.9 (f. 52\textsuperscript{v}) [\getsiglum{Q}, f. 47\textsuperscript{v}]} 
+%
+\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς τὸ αὐτό \getsiglum{Pl}}
+\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς τὸν Μύρωνος βοῦν \getsiglum{Ss}}
+%
+\note[type=tituli,nosep,nonum,labelb=S41_1a,labele=S41_2f]{Tit. τοῦ αὐτοῦ (scil. Ἀντιπάτρου Σιδωνίου) \getsiglum{P, Pl}}
+\note[type=tituli,nosep,nonum,labelb=S41_1a,labele=S41_2f]{s.a.n. \getsiglum{Ss}}
+[...]
+```
+:::
+::: 
+
+```latex
+\note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς \app{
+    \lem[wit=Ss]{τὸν Μύρωνος βοῦν}
+    \rdg[wit=Pl]{εἰς τὸ αὐτό}
+}}
+```
+
+# III. Conclusion 
+
+- Une collaboration avec les PURH (coll. *Aldines*) 
+- Bi-/Trilinguisme 
+- Double format : 
+  - Papier : consultation classique // tradition 
+  - Numérique : Visualisations alternatives (caractère mouvant des épigrammes)
+
+→ vers une reconfiguration épistémologique plus profonde des normes de la discipline. 
+
+# Merci 
