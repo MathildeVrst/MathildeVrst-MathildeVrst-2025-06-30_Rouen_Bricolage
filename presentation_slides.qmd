@@ -25,23 +25,40 @@ format:
 
 ::: {.columns}
 ::: {.column}
-![Lucillio. *Epigrammi. Introduzione, testo critico, traduzione e commento* a cura di L.F., Texte und Kommentare 47, De Gruyter, Berlin/Boston 2014](img/Lucillio2014.jpeg){.lightbox height="400"}
+![Lucillio. *Epigrammi. Introduzione, testo critico, traduzione e commento* a cura di L. Floridi, Texte und Kommentare 47, De Gruyter, Berlin/Boston 2014](img/Lucillio2014.jpeg){.lightbox height="150"}
+
+![Edilo. *Epigrammi. Introduzione, testo critico, traduzione e commento* a cura di L. Floridi, Texte und Kommentare 64, De Gruyter, Berlin/Boston 2020](img/Edilo2020.jpeg){.lightbox height="150"}
 :::
 ::: {.column}
-![Edilo. *Epigrammi. Introduzione, testo critico, traduzione e commento* a cura di L.Floridi, Texte und Kommentare 64, De Gruyter, Berlin/Boston 2020](img/Edilo2020.jpeg){.lightbox height="400"}
+
+::: {.fragment}
+
+![À paraître!](img/SyllogePURH.drawio.png){.lightbox height="500"}
+
+:::
+
 :::
 ::: 
 
 
 ## C'est quoi, une édition critique d'un texte classique ?
 
+::: {.columns}
+::: {.column}
+
 - Ecdotique : Art d’éditer les textes d’après une méthode critique ; 
 - ἔκδοσις < ἐκδίδωμι : produire au dehors, faire passer en d’autres mains, confier ; publier ; 
-- Plusieurs étapes: 
-    - *Recensio* ;
-    - *Collatio* ;
-    - *Emendatio* ;
-    - *Dispositio*. 
+- Plusieurs étapes : 
+    - *Recensio* ; 
+    - *Collatio* ; 
+        - *Examinatio* ;
+        - *Emendatio*
+
+:::
+::: {.column}
+![West, *Textual Criticism and Editorial Technique [...]*, 1973](img/west.jpg){.lightbox height="500"}
+:::
+::: 
 
 ## 
 
@@ -336,7 +353,7 @@ Une fois encodés
 ## *codd.* / *edd.*
 
 - *codd.* = codices (*cod.* = codex) → le(s) manuscrits 
-- *edd.* = editiones (*ed.* = édition) → les éditions 
+- *edd.* = editores (*ed.* = editor) → les éditeurs 
 
 ![S45](img/S45.drawio.png)
 
@@ -345,6 +362,10 @@ Une fois encodés
 ```latex
 %%%45%%%
 
+\DeclareShorthand{_codd45}{codd\ekddot}{P, Pl, Q, _L, GeorgA, GeorgL, GeorgP, GeorgO}
+
+%%%
+
 \begin{alignment}
 \ekddiv{head={\getsiglum{_S}45 (f. 180\textsuperscript{v}) = \getsiglum{B}1 (f. 135\textsuperscript{r})}, depth=5, type=epigram}
   \begin{edition}
@@ -352,16 +373,8 @@ Une fois encodés
       \indentpattern{01}
       \begin{patverse*}
 
-\note[type=testium,nosep,nonum,labelb=S45_1a,labele=S45_6f]{
-    \getsiglum{P} 10.27 (p. 494); 
-    \getsiglum{Pl} 1a.37.1 (f. 10\textsuperscript{r}) [\getsiglum{Q}, f. 10\textsuperscript{r}]; 
-    \getsiglum{_L}37 (f. 4\textsuperscript{r}); 
-    \getsiglum{Odorico1986} 69 (\getsiglum{_Georg45_ALP0})}
-\note[type=tituli,nosep,nonum,labelb=S45_1a,labele=S45_6f]{
-    Tit. Λουκιανοῦ \getsiglum{Pl}~: 
-    τοῦ αὐτοῦ (scil. Λουκιανοῦ) \getsiglum{P}~: 
-    Ἐρμίππου \getsiglum{_Georg45_ALP}~: 
-    s.a.n. \getsiglum{Ss, B, _L, GeorgO}}
+[...]
+
 Ἀνθρώπους μὲν \app{
   \lem[wit={P, Pl, _L, _Georg45_LPO}]{ἴσως}
   \rdg[alt={om.}, wit={Ss, GeorgA, B}]{}
@@ -431,11 +444,11 @@ Une fois encodés
 ```latex
 \note[type=lemmata,nosep,nonum,labelb=S41_1a,labele=S41_2f]{εἰς \app{
     \lem[wit=Ss]{τὸν Μύρωνος βοῦν}
-    \rdg[wit=Pl]{εἰς τὸ αὐτό}
+    \rdg[wit=Pl]{τὸ αὐτό}
 }}
 ```
 
-# III. Conclusion 
+# III. Conclusion {background-gradient="radial-gradient(#107895, #FFFFFF)"}
 
 - Une collaboration avec les PURH (coll. *Aldines*) 
 - Bi-/Trilinguisme 
@@ -446,3 +459,16 @@ Une fois encodés
 → vers une reconfiguration épistémologique plus profonde des normes de la discipline. 
 
 # Merci 
+
+> S48 = P X.52 
+> 
+> Εὖγε λέγων τὸν Καιρὸν ἔφης θεόν, εὖγε, Μένανδρε,<br>
+> &nbsp; &nbsp; ὡς ἀνὴρ Μουσῶν καὶ Χαρίτων τρόφιμος·<br>
+> πολλάκι γὰρ τοῦ σφόδρα μεριμνηθέντος ἄμεινον<br>
+> &nbsp; &nbsp; προσπεσὸν εὐκαίρως εὗρέ τι ταὐτόματον.
+>
+> Tu as très bien fait de dire que l’Occasion était un dieu, Ménandre,<br>
+> &nbsp; &nbsp; toi qui a été élevé par les Muses et les Grâces.<br>
+> Car souvent, un événement fortuit qui tombe à point<br>
+> &nbsp; &nbsp; est bien plus efficace qu’une chose longtemps préméditée.
+
